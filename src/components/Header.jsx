@@ -1,9 +1,14 @@
+import logo from '/logo-name.svg'
+
 export default function Header() {
+    const now = new Date()
+
     return (
         <header>
-            <h3>Result University</h3>
+            <img src={logo} alt="Result"/>
+            {/*<h3>Result University</h3>*/}
 
-            <span>Тут будет время</span>
+            <span>Время сейчас: { now.toLocaleTimeString() }</span>
         </header>
     )
 }
